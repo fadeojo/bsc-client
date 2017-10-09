@@ -1,5 +1,6 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow, mount, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { FormattedMessage, defineMessages } from 'react-intl';
 import { Provider } from 'react-redux';
 import { browserHistory } from 'react-router-dom';
@@ -8,6 +9,8 @@ import ConnectedLanguageProvider, { LanguageProvider } from '../index';
 import configureStore from '../../../configureStore';
 
 import { translationMessages } from '../../../i18n';
+
+configure({ adapter: new Adapter() });
 
 const messages = defineMessages({
   someMessage: {
@@ -19,7 +22,7 @@ const messages = defineMessages({
 
 describe('<LanguageProvider />', () => {
   it('should render its children', () => {
-    const children = (<h1>Test</h1>);
+    const children = <h1>Test</h1>;
     const renderedComponent = shallow(
       <LanguageProvider messages={messages} locale="en">
         {children}
@@ -44,6 +47,8 @@ describe('<ConnectedLanguageProvider />', () => {
         </ConnectedLanguageProvider>
       </Provider>
     );
-    expect(renderedComponent.contains(<FormattedMessage {...messages.someMessage} />)).toBe(true);
+    expect(
+      renderedComponent.contains(<FormattedMessage {...messages.someMessage} />)
+    ).toBe(true);
   });
 });
