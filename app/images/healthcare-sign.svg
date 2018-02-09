@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFC300;}
+	.st1{fill:#D1A000;}
+	.st2{fill:#CFD8DC;}
+	.st3{fill:#B0BEC5;}
+	.st4{fill:#34444C;}
+	.st5{fill:#F72250;}
+	.st6{fill:#81D4FA;}
+	.st7{fill:#33E0A6;}
+	.st8{fill:#8FEECE;}
+	.st9{fill:#FFD766;}
+	.st10{fill:#1976D2;}
+	.st11{fill:#1E88E5;}
+	.st12{fill:#ECEFF1;}
+	.st13{fill:#90A4AE;}
+	.st14{fill:#B3E5FC;}
+	.st15{fill:#4FC3F7;}
+	.st16{fill:#1565C0;}
+	.st17{fill:#29B6F6;}
+	.st18{fill:#202B30;}
+	.st19{fill:#6B777C;}
+	.st20{fill:#FAFAFA;}
+	.st21{fill:#FFFFFF;}
+	.st22{fill:#26A379;}
+	.st23{fill:#18664C;}
+	.st24{fill:#B4193B;}
+	.st25{fill:#F95E7F;}
+	.st26{fill:#711025;}
+	.st27{fill:#78909C;}
+	.st28{fill:#039BE5;}
+	.st29{fill:#1B2428;}
+	.st30{fill:#13191C;}
+	.st31{fill:#FDD835;}
+</style>
+<g id="Hospital">
+	<g>
+		<rect x="18" y="9.5" class="st6" width="28" height="45"/>
+		<rect x="43" y="9.5" class="st15" width="3" height="45"/>
+		<rect x="18" y="9.5" class="st14" width="3" height="45"/>
+		<path class="st15" d="M18,54.5H6V21c0-1.4,1.1-2.5,2.5-2.5H18V54.5z"/>
+		<path class="st15" d="M58,54.5H46v-36h9.5c1.4,0,2.5,1.1,2.5,2.5V54.5z"/>
+		<rect x="46" y="18.5" class="st17" width="3" height="36"/>
+		<path class="st5" d="M46.5,9.5h-29c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1h29c0.6,0,1,0.4,1,1v2C47.5,9.1,47.1,9.5,46.5,9.5z"/>
+		<rect x="24" y="42.5" class="st10" width="16" height="12"/>
+		<g>
+			<circle class="st20" cx="32" cy="25.5" r="8"/>
+			<path class="st10" d="M36,24h-2.5v-2.5c0-0.6-0.4-1-1-1h-1c-0.6,0-1,0.4-1,1V24H28c-0.6,0-1,0.4-1,1v1c0,0.6,0.4,1,1,1h2.5v2.5
+				c0,0.6,0.4,1,1,1h1c0.6,0,1-0.4,1-1V27H36c0.6,0,1-0.4,1-1v-1C37,24.4,36.6,24,36,24z"/>
+		</g>
+		<path class="st7" d="M62.5,58.5h-61c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1h61c0.6,0,1,0.4,1,1v2C63.5,58.1,63.1,58.5,62.5,58.5z"/>
+		<g>
+			<path class="st10" d="M14,30.5h-4c-0.6,0-1-0.4-1-1v-4c0-0.6,0.4-1,1-1h4c0.6,0,1,0.4,1,1v4C15,30.1,14.6,30.5,14,30.5z"/>
+			<path class="st16" d="M14,24.5v6c0.6,0,1-0.4,1-1v-4C15,24.9,14.6,24.5,14,24.5z"/>
+		</g>
+		<g>
+			<path class="st10" d="M14,42.5h-4c-0.6,0-1-0.4-1-1v-4c0-0.6,0.4-1,1-1h4c0.6,0,1,0.4,1,1v4C15,42.1,14.6,42.5,14,42.5z"/>
+			<path class="st16" d="M14,36.5v6c0.6,0,1-0.4,1-1v-4C15,36.9,14.6,36.5,14,36.5z"/>
+		</g>
+		<g>
+			<path class="st10" d="M54,30.5h-4c-0.6,0-1-0.4-1-1v-4c0-0.6,0.4-1,1-1h4c0.6,0,1,0.4,1,1v4C55,30.1,54.6,30.5,54,30.5z"/>
+			<path class="st16" d="M54,24.5v6c0.6,0,1-0.4,1-1v-4C55,24.9,54.6,24.5,54,24.5z"/>
+		</g>
+		<g>
+			<path class="st10" d="M54,42.5h-4c-0.6,0-1-0.4-1-1v-4c0-0.6,0.4-1,1-1h4c0.6,0,1,0.4,1,1v4C55,42.1,54.6,42.5,54,42.5z"/>
+			<path class="st16" d="M54,36.5v6c0.6,0,1-0.4,1-1v-4C55,36.9,54.6,36.5,54,36.5z"/>
+		</g>
+		<path class="st15" d="M40,42.5H24c-0.6,0-1-0.4-1-1v-1c0-0.6,0.4-1,1-1h16c0.6,0,1,0.4,1,1v1C41,42.1,40.6,42.5,40,42.5z"/>
+		<g>
+			<rect x="31.5" y="42.5" class="st11" width="1" height="12"/>
+		</g>
+		<rect x="39" y="42.5" class="st16" width="1" height="12"/>
+	</g>
+</g>
+</svg>

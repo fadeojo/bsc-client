@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomePage /> should render correctly 1`] = `
+<div
+  className="home-component"
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "height": "100%",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <img
+        alt=""
+        src="IMAGE_MOCK"
+      />
+      <button
+        className="ant-btn ant-btn-primary"
+        onClick={[Function]}
+        style={
+          Object {
+            "height": 42,
+            "width": 225,
+          }
+        }
+        type="button"
+      >
+        <span>
+          Login
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
