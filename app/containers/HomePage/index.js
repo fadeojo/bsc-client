@@ -10,6 +10,8 @@
  */
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { object } from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 import { Button } from 'antd';
 import messages from './messages';
@@ -39,7 +41,9 @@ export default class HomePage extends React.PureComponent {
           >
             <img src={healthImage} alt="" />
             <Button type="primary" style={{ width: 225, height: 42 }}>
-              <FormattedMessage {...messages.login} />
+              <Link to="/login">
+                <FormattedMessage {...messages.login} />
+              </Link>
             </Button>
           </div>
         </div>
@@ -47,3 +51,7 @@ export default class HomePage extends React.PureComponent {
     );
   }
 }
+
+HomePage.propTypes = {
+  history: object.isRequired,
+};
