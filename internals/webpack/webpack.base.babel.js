@@ -4,6 +4,11 @@
 
 const path = require('path');
 const webpack = require('webpack');
+const tsImportPluginFactory = require('ts-import-plugin');
+
+const TsConfigPathsPlugin = require('awesome-typescript-loader')
+  .TsConfigPathsPlugin;
+const CheckerPlugin = require('awesome-typescript-loader').CheckerPlugin;
 
 // Remove this line once the following warning goes away (it was meant for webpack loader authors not users):
 // 'DeprecationWarning: loaderUtils.parseQuery() received a non-string value which can be problematic,
@@ -86,6 +91,23 @@ module.exports = (options) => ({
       },
       // Process JS with Babel.
       {
+        test: /\.(tsx)$/,
+        exclude: /node_modules/,
+        loader: require.resolve('awesome-typescript-loader'),
+        options: {
+          transpileOnly: true,
+          getCustomTransformers: () => ({
+            before: [
+              tsImportPluginFactory({
+                libraryName: 'antd',
+                libraryDirectory: 'es',
+                style: 'css',
+              }),
+            ],
+          }),
+        },
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: require.resolve('babel-loader'),
@@ -100,6 +122,8 @@ module.exports = (options) => ({
     ],
   },
   plugins: options.plugins.concat([
+    new TsConfigPathsPlugin(),
+    new CheckerPlugin(),
     new webpack.ProvidePlugin({
       // make fetch available
       fetch: 'exports-loader?self.fetch!whatwg-fetch',
@@ -117,7 +141,7 @@ module.exports = (options) => ({
   ]),
   resolve: {
     modules: ['app', 'node_modules'],
-    extensions: ['.js', '.jsx', '.react.js'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.react.js'],
     mainFields: ['browser', 'jsnext:main', 'main'],
   },
   devtool: options.devtool,
